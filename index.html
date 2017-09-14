@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>katalog</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+$("#btn").click(function(){
+$(".feedback").fadeIn(800);
+});
+$(".black-overlay").click(function(){
+$(".feedback").fadeOut(800);
+});
+});
+</script>
+
+
+</head>
+<body>
+  <header>
+
+    <div class="container">
+      <div class="logo">
+        <img src="" alt="" width="80px" height="80px" alt="logo">
+      </div>
+  <div class="left-hand">
+    <h2>Название компании</h2>
+    <p>самая клевая компания</p>
+  </div>
+  <div class="right-hand">
+    <p class="tel"><a href="#">+7(499)777-77-77</a></p>
+    <p class="tel"><a href="#">+7(499)777-77-77</a></p>
+    <div class="connect">
+    <button id="btn" type="button" name="button">Обратная связь</button>
+
+    </div>
+
+  </div>
+    </div>
+
+
+
+      <div class="feedback">
+<div  class="black-overlay"></div>
+      <div id="form">
+
+     <a class="close-btn" href="" >Закрыть</a>
+           <h1 class="title">Обратная связь</h1>
+            <form method="post" action="">
+              <p class="form_name">Ваше имя</p>
+        <input type="text" name="sender_name"  value="" class="your-name"/>
+        <p class="form_name">Телефон</p>
+        <input type="text" name="sender_tel"  value="" class="your-tel"/>
+        <p class="form_name">Email</p>
+        <input type="text" name="sender_email"  value="" class="email-address"/>
+        <p class="form_name">Сообщение</p>
+        <textarea class="your-message"></textarea>
+        <input type="submit" name="send" value="Отправить" class="send-message">
+            </form>
+              </div>
+
+      </div>
+  </header>
+</body>
+</html>
